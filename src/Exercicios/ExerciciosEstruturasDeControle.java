@@ -77,27 +77,31 @@ public class ExerciciosEstruturasDeControle {
         Scanner scan = new Scanner(System.in);
         System.out.println("\n=== Exibe pares/impares ===");
 
-        System.out.println("Digite um intervalo numérico: ");
-        System.out.print("Início:   ");
-        int inicio = scan.nextInt();
-        scan.nextLine();
+        int inicio = 0;
+        int fim = 0;
+        do {
+            System.out.println("Digite um intervalo numérico: ");
+            System.out.print("Início:   ");
+            inicio = scan.nextInt();
+            scan.nextLine();
 
-        System.out.print("Fim:   ");
-        int fim = scan.nextInt();
-        scan.nextLine();
+            System.out.print("Fim:   ");
+            fim = scan.nextInt();
+            scan.nextLine();
 
-        if(inicio > fim) {
-            System.out.println("Intervalo inválido!"); return;
-        }
+            if(inicio > fim) System.out.println("Intervalo inválido! O fim deve ser maior que o início");
+        } while (inicio > fim);
 
-        System.out.print("Exibir números pares ou ímpares? (p/i)   ");
-        String pares = scan.nextLine();
+        String opcao = "";
+        do {
+            System.out.print("Exibir números pares ou ímpares? (p/i)   ");
+            opcao = scan.nextLine();
 
-        if(!pares.equalsIgnoreCase("p") && !pares.equalsIgnoreCase("i")) {
-            System.out.println("Entrada inválida!"); return;
-        }
+            if(!opcao.equalsIgnoreCase("p") && !opcao.equalsIgnoreCase("i")) System.out.println("Entrada inválida!");
+        } while (!opcao.equalsIgnoreCase("p") && !opcao.equalsIgnoreCase("i"));
 
-        boolean mostrarPares = pares.equalsIgnoreCase("p");
+
+        boolean mostrarPares = opcao.equalsIgnoreCase("p");
         for(int i = fim; i >= inicio; i--) {
             if((mostrarPares && i%2 == 0) || (!mostrarPares && i%2 != 0)) {
                 System.out.println(i);
@@ -124,6 +128,7 @@ public class ExerciciosEstruturasDeControle {
             if(entrada < inicial) continue;
             prox = entrada;
         } while (prox % inicial == 0);
+        
         System.out.printf("\n%s não é múltiplo de %s! Programa encerrado.",prox,inicial);
     }
     public static void main(String[] args) {
