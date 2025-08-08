@@ -3,6 +3,6 @@
 import Exercicios.*;
 public class Main {
     public static void main(String[] args) {
-        ExerciciosFundamentos.Exercicio1();
+        ExerciciosEstruturasDeControle.Exercicio2();
     }
 }
