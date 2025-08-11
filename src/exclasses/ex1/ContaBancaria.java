@@ -1,6 +1,6 @@
 package exclasses.ex1;
 
-import exclasses.ex1.exclasses.ex1.exception.SaldoInsuficienteException;
+import exclasses.ex1.exception.SaldoInsuficienteException;
 
 public class ContaBancaria {
     private float saldo;

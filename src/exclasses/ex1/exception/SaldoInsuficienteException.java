@@ -1,4 +1,4 @@
-package exclasses.ex1.exclasses.ex1.exception;
+package exclasses.ex1.exception;
 
 public class SaldoInsuficienteException extends RuntimeException {
     public SaldoInsuficienteException(String message) {

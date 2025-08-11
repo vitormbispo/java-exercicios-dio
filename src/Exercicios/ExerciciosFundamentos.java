@@ -72,14 +72,14 @@ public class ExerciciosFundamentos {
     }
 
     public static void main(String[] args) {
-        System.out.println("=== Exercícios de Fundamentos do Java: ===");
+        System.out.println("\n=== Exercícios de Fundamentos do Java: ===");
         System.out.println("\n1) Escreva um código que receba o nome e o ano de nascimento de alguém \ne imprima na tela a seguinte mensagem: \"Olá 'Fulano' você tem 'X' anos\".");
         System.out.println("\n2) Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela.");
         System.out.println("\n3) Escreva um código que receba a base e a altura de um retângulo, calcule sua área e exiba na tela.");
         System.out.println("\n4) Escreva um código que receba o nome e a idade de 2 pessoas e imprima a diferença de idade entre elas.");
 
 
-        String opcao = "";
+        String opcao;
         do {
             System.out.print("\n\n (?) - Qual exercício você quer rodar?(1-4) (digite \"sair\" para encerrar)  ");
             Scanner scan = new Scanner(System.in);

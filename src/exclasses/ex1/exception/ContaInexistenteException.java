@@ -1,4 +1,4 @@
-package exclasses.ex1.exclasses.ex1.exception;
+package exclasses.ex1.exception;
 
 public class ContaInexistenteException extends RuntimeException{
     public ContaInexistenteException(String message) {

@@ -1,8 +1,7 @@
-package exclasses.ex1.exclasses.ex1;
+package exclasses.ex1;
 
-import exclasses.ex1.ContaBancaria;
-import exclasses.ex1.exclasses.ex1.exception.ContaInexistenteException;
-import exclasses.ex1.exclasses.ex1.exception.SaldoInsuficienteException;
+import exclasses.ex1.exception.ContaInexistenteException;
+import exclasses.ex1.exception.SaldoInsuficienteException;
 
 import java.util.Scanner;
 
