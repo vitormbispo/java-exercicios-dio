@@ -15,7 +15,9 @@ public class Main {
             System.out.println("2) Estruturas de Controle.");
             System.out.println("3) Classes e Encapsulamento.");
             System.out.println("4) Herança.");
-            System.out.println("5) Encerrar aplicação.");
+            System.out.println("5) Interfaces.");
+            System.out.println("6) Collections.");
+            System.out.println("7) Encerrar aplicação.");
             System.out.print("\n Escolha um dos temas:   ");
 
             Scanner scan = new Scanner(System.in);
@@ -27,6 +29,8 @@ public class Main {
                 case 2 -> ExerciciosEstruturasDeControle.main(null);
                 case 3 -> ExerciciosClasses.main(null);
                 case 4 -> ExerciciosHeranca.main(null);
+                case 5 -> ExerciciosInterfaces.main(null);
+                case 6 -> ExerciciosCollections.main(null);
                 default -> programaEncerrado = true;
             }
         } while (!programaEncerrado);

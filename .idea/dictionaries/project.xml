@@ -2,8 +2,11 @@
   <dictionary name="project">
     <words>
       <w>agua</w>
+      <w>descricao</w>
+      <w>descricoes</w>
       <w>direcao</w>
       <w>nivel</w>
+      <w>preco</w>
     </words>
   </dictionary>
 </component>
