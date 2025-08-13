@@ -1,6 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import Exercicios.*;
+import exstream.ex1.ExerciciosStream1;
 
 import java.util.Scanner;
 
@@ -17,7 +18,8 @@ public class Main {
             System.out.println("4) Herança.");
             System.out.println("5) Interfaces.");
             System.out.println("6) Collections.");
-            System.out.println("7) Encerrar aplicação.");
+            System.out.println("7) Stream.");
+            System.out.println("8) Encerrar aplicação.");
             System.out.print("\n Escolha um dos temas:   ");
 
             Scanner scan = new Scanner(System.in);
@@ -31,6 +33,7 @@ public class Main {
                 case 4 -> ExerciciosHeranca.main(null);
                 case 5 -> ExerciciosInterfaces.main(null);
                 case 6 -> ExerciciosCollections.main(null);
+                case 7 -> ExerciciosStream1.RodarExercicio();
                 default -> programaEncerrado = true;
             }
         } while (!programaEncerrado);
