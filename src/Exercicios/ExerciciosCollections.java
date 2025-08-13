@@ -3,6 +3,8 @@ package Exercicios;
 import excollections.ex1.ExerciciosCollections1;
 import excollections.ex2.ExerciciosCollections2;
 import excollections.ex5.ExerciciosCollections5;
+import excollections.ex6.ExerciciosCollections6;
+import excollections.ex7.ExerciciosCollections7;
 
 import java.util.Scanner;
 
@@ -15,6 +17,8 @@ public class ExerciciosCollections {
             System.out.println("\n1) Lista de tarefas");
             System.out.println("2) Carrinho de compras");
             System.out.println("3) Ordenando pessoas");
+            System.out.println("4) Ingressos de convidados");
+            System.out.println("5) Agenda de contatos");
             System.out.print("\n\n (?) - Qual exercício você quer rodar?(1-3) (digite \"sair\" para encerrar)  ");
             Scanner scan = new Scanner(System.in);
             opcao = scan.nextLine();
@@ -23,6 +27,8 @@ public class ExerciciosCollections {
                 case "1" -> ExerciciosCollections1.RodarExercicio();
                 case "2" -> ExerciciosCollections2.RodarExercicio();
                 case "3" -> ExerciciosCollections5.RodarExercicio();
+                case "4" -> ExerciciosCollections6.RodarExercicio();
+                case "5" -> ExerciciosCollections7.RodarExercicio();
                 case "sair" -> System.out.println("Encerrando...");
                 default -> System.out.println("Opção inválida!");
             }
